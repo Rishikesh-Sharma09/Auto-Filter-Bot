@@ -11,3 +11,4 @@
  - [Pyrogram](https://t.me/pyrogramchat) To the members who helped
  - [Contributors](https://github.com/SL-Bots-TG/Auto-Filter-Bot/graphs/contributors) For free helps
 
+# Please fork and give star ⭐️
