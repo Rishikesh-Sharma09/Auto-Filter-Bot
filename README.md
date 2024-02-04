@@ -9,7 +9,7 @@
 
 ## Thanks To
  - [Pyrogram](https://t.me/pyrogramchat) To the members who helped
- - [Contributors](https://github.com/SL-Bots-TG/Auto-Filter-Bot/graphs/contributors) For free helps
+ - [Contributors](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/graphs/contributors) For free helps
 
 # Please fork and give star ⭐️
 
