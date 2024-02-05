@@ -7,7 +7,7 @@ from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidD
 from Script import script
 from datetime import datetime, timedelta
 import pyrogram
-from info import ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DELETE_TIME, FILMS_LINK, AUTH_CHANNEL, IS_VERIFY, VERIFY_EXPIRE, LOG_CHANNEL, SUPPORT_GROUP, SUPPORT_LINK, UPDATES_LINK, PICS, PROTECT_CONTENT, IMDB, AUTO_FILTER, SPELL_CHECK, IMDB_TEMPLATE, AUTO_DELETE, LANGUAGES, IS_FSUB, PAYMENT_QR, PM_SEARCH
+from info import ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DELETE_TIME, FILMS_LINK, AUTH_CHANNEL, IS_VERIFY, VERIFY_EXPIRE, LOG_CHANNEL, SUPPORT_GROUP, SUPPORT_LINK, UPDATES_LINK, PICS, PROTECT_CONTENT, IMDB, AUTO_FILTER, SPELL_CHECK, IMDB_TEMPLATE, AUTO_DELETE, LANGUAGES, IS_FSUB, PAYMENT_QR, GROUP_FSUB, PM_SEARCH
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ChatPermissions
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid, ChatAdminRequired
@@ -40,23 +40,26 @@ async def give_filter(client, message):
     settings = await get_settings(message.chat.id)
     chatid = message.chat.id
     userid = message.from_user.id if message.from_user else None
-    btn = await is_subscribed(client, message, settings['fsub']) if settings.get('is_fsub', IS_FSUB) else None
-    if btn:
-        btn.append(
-            [InlineKeyboardButton("Unmute Me 🔕", callback_data=f"unmuteme#{chatid}")]
-        )
-        reply_markup = InlineKeyboardMarkup(btn)
-        try:
-            await client.restrict_chat_member(chatid, message.from_user.id, ChatPermissions(can_send_messages=False))
-            await message.reply_photo(
-                photo=random.choice(PICS),
-                caption=f"👋 Hello {message.from_user.mention},\n\nPlease join and try again. 😇",
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
+    if GROUP_FSUB:
+        btn = await is_subscribed(client, message, settings['fsub']) if settings.get('is_fsub', IS_FSUB) else None
+        if btn:
+            btn.append(
+                [InlineKeyboardButton("Unmute Me 🔕", callback_data=f"unmuteme#{chatid}")]
             )
-            return
-        except Exception as e:
-            print(e)
+            reply_markup = InlineKeyboardMarkup(btn)
+            try:
+                await client.restrict_chat_member(chatid, message.from_user.id, ChatPermissions(can_send_messages=False))
+                await message.reply_photo(
+                    photo=random.choice(PICS),
+                    caption=f"👋 Hello {message.from_user.mention},\n\nPlease join and try again. 😇",
+                    reply_markup=reply_markup,
+                    parse_mode=enums.ParseMode.HTML
+                )
+                return
+            except Exception as e:
+                print(e)
+    else:
+        pass
     if settings["auto_filter"]:
         if not userid:
             await message.reply("I'm not working for anonymous admin!")
