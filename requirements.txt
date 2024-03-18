@@ -1,4 +1,5 @@
 git+https://github.com/KurimuzonAkuma/pyrogram
+pyromod
 tgcrypto
 motor
 marshmallow
