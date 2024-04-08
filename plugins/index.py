@@ -65,7 +65,7 @@ async def send_for_index(bot, message):
         return await message.reply('This may be group and iam not a admin of the group.')
 
     s = await message.reply_text(
-        text = "Send the skip message number.\n\n if dont want to skip any files send me 0",
+        text = "<b>Send the skip message number.\n\nIf dont want to skip any files send me 👉 0 \n</b>",
         reply_to_message_id=message.id,
         reply_markup=ForceReply(True)
     )
