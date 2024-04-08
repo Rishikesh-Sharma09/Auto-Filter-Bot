@@ -1,3 +1,8 @@
+# (c) github - @Rishikesh-Sharma09 ,telegram - https://telegram.me/Rk_botz
+# removing credits doesn't make you coder 
+
+# New better way of indexing and skipping added 
+
 import logging
 import asyncio
 from pyrogram import Client, filters, enums
