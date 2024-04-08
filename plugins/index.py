@@ -99,6 +99,7 @@ async def forceskip(client, message):
             return
 
     await message.delete()
+    await msg.delete()
     if message.from_user.id in ADMINS:      
         buttons = [
             [
