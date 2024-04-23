@@ -94,6 +94,9 @@ SHORTLINK_API = environ.get("SHORTLINK_API", "f646357aa129cfbd7eb59bcba428096ab5
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
+STICKERS_IDS = (
+    "CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME CAACAgQAAxkBAAELqxll8CcG-MZx9mIOXgaHSzLc9uyxswACaxQAAlrdEVOJDG3cIZuWLzQE"
+).split()
 
 # boolean settings 
 GROUP_FSUB = is_enabled('GROUP_FSUB', False) 

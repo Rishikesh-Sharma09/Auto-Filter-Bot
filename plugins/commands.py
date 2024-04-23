@@ -10,10 +10,9 @@ from pyrogram.errors import ChatAdminRequired, FloodWait, ButtonDataInvalid
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id, delete_files
 from database.users_chats_db import db
-from info import SUPPORT_GROUP ,INDEX_CHANNELS, ADMINS, IS_VERIFY, VERIFY_TUTORIAL, VERIFY_EXPIRE, TUTORIAL, SHORTLINK_API, SHORTLINK_URL, AUTH_CHANNEL, DELETE_TIME, SUPPORT_LINK, UPDATES_LINK, LOG_CHANNEL, PICS, PROTECT_CONTENT, IS_STREAM, IS_FSUB, PAYMENT_QR
+from info import STICKERS_IDS,SUPPORT_GROUP ,INDEX_CHANNELS, ADMINS, IS_VERIFY, VERIFY_TUTORIAL, VERIFY_EXPIRE, TUTORIAL, SHORTLINK_API, SHORTLINK_URL, AUTH_CHANNEL, DELETE_TIME, SUPPORT_LINK, UPDATES_LINK, LOG_CHANNEL, PICS, PROTECT_CONTENT, IS_STREAM, IS_FSUB, PAYMENT_QR
 from utils import get_settings, get_size, is_subscribed, is_check_admin, get_shortlink, get_verify_status, update_verify_status, save_group_settings, temp, get_readable_time, get_wish, get_seconds
 import requests
-from shortzy import Shortzy
 from telegraph import upload_file
 
 @Client.on_message(filters.command("ask") & filters.group(SUPPORT_GROUP) & filters.incoming) #add your support grp
@@ -21,12 +20,16 @@ async def aiRes(_, message):
     asked = message.text.split(None, 1)[1]
     if not asked:
         return await message.reply("Bhai kuch puch to le /ask k baad !")
+    thinkStc = await message.reply_sticker(sticker=random.choice(STICKERS_IDS))
     url = f"https://bisal-ai-api.vercel.app/biisal" 
     res = requests.post(url , data={'query' : asked})
     if res.status_code == 200:
         response = res.json().get("response")
+        await thinkStc.delete()
         await message.reply(f"<b>hey {message.from_user.mention()},\n{response.lstrip() if response.startswith(' ') else response}</b>")
     else:
+        await thinkStc.delete()
+
         await message.reply("Mausam kharab hai ! Thode der mein try kre !\nor Report to Developer.")
 
 @Client.on_message(filters.command("start") & filters.incoming)

@@ -1,20 +1,17 @@
 import random
 import asyncio
 import re, time
-import ast
 import math
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 from datetime import datetime, timedelta
-import pyrogram
-from info import ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DELETE_TIME, FILMS_LINK, AUTH_CHANNEL, IS_VERIFY, VERIFY_EXPIRE, LOG_CHANNEL, SUPPORT_GROUP, SUPPORT_LINK, UPDATES_LINK, PICS, PROTECT_CONTENT, IMDB, AUTO_FILTER, SPELL_CHECK, IMDB_TEMPLATE, AUTO_DELETE, LANGUAGES, IS_FSUB, PAYMENT_QR, GROUP_FSUB, PM_SEARCH
+from info import STICKERS_IDS, ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DELETE_TIME, FILMS_LINK, AUTH_CHANNEL, IS_VERIFY, VERIFY_EXPIRE, LOG_CHANNEL, SUPPORT_GROUP, SUPPORT_LINK, UPDATES_LINK, PICS, PROTECT_CONTENT, IMDB, AUTO_FILTER, SPELL_CHECK, IMDB_TEMPLATE, AUTO_DELETE, LANGUAGES, IS_FSUB, PAYMENT_QR, GROUP_FSUB, PM_SEARCH
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ChatPermissions
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid, ChatAdminRequired
 from utils import get_size, is_subscribed, is_check_admin, get_wish, get_shortlink, get_verify_status, update_verify_status, get_readable_time, get_poster, temp, get_settings, save_group_settings
 from database.users_chats_db import db
 from database.ia_filterdb import Media, get_file_details, get_search_results,delete_files
-import logging
 
 BUTTONS = {}
 CAP = {}
@@ -769,8 +766,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.reply(f"Successfully kicked deleted <code>{len(users_id)}</code> accounts.")
         else:
             await query.message.reply('Nothing to kick deleted accounts.')
-
 async def auto_filter(client, msg, spoll=False):
+    thinkStc = await message.reply_sticker(sticker=random.choice(STICKERS_IDS))
     if not spoll:
         message = msg
         settings = await get_settings(message.chat.id)
@@ -778,6 +775,7 @@ async def auto_filter(client, msg, spoll=False):
         files, offset, total_results = await get_search_results(search)
         if not files:
             if settings["spell_check"]:
+                await thinkStc.delete()
                 await advantage_spell_chok(msg)
             return
     else:
@@ -875,6 +873,7 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             if settings["auto_delete"]:
+                await thinkStc.delete()
                 k = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn))
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
@@ -883,11 +882,13 @@ async def auto_filter(client, msg, spoll=False):
                 except:
                     pass
             else:
+                await thinkStc.delete()
                 await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             if settings["auto_delete"]:
+                await thinkStc.delete()
                 k = await message.reply_photo(photo=poster, caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn))
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
@@ -896,9 +897,11 @@ async def auto_filter(client, msg, spoll=False):
                 except:
                     pass
             else:
+                await thinkStc.delete()
                 await message.reply_photo(photo=poster, caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             if settings["auto_delete"]:
+                await thinkStc.delete()
                 k = await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
@@ -907,9 +910,11 @@ async def auto_filter(client, msg, spoll=False):
                 except:
                     pass
             else:
+                await thinkStc.delete()
                 await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
     else:
         if settings["auto_delete"]:
+            await thinkStc.delete()
             k = await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
             await asyncio.sleep(DELETE_TIME)
             await k.delete()
@@ -918,6 +923,7 @@ async def auto_filter(client, msg, spoll=False):
             except:
                 pass
         else:
+            await thinkStc.delete()
             await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
 
 async def advantage_spell_chok(message):
