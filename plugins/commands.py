@@ -25,7 +25,7 @@ async def aiRes(_, message):
     res = requests.post(url , data={'query' : asked})
     if res.status_code == 200:
         response = res.json().get("response")
-        await message.reply(f'<b>hey {message.from_user.mention()},\n{response.split(' ' , 1)[1] if response.startswith(' ') else response}</b>')
+        await message.reply(f"<b>hey {message.from_user.mention()},\n{response.lstrip() if response.startswith(' ') else response}</b>")
     else:
         await message.reply("Mausam kharab hai ! Thode der mein try kre !\nor Report to Developer.")
 
