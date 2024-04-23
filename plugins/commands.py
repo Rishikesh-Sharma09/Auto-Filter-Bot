@@ -28,6 +28,8 @@ async def aiRes(_, message):
         await thinkStc.delete()
         await message.reply(f"<b>hey {message.from_user.mention()},\n{response.lstrip() if response.startswith(' ') else response}</b>")
     else:
+        await thinkStc.delete()
+
         await message.reply("Mausam kharab hai ! Thode der mein try kre !\nor Report to Developer.")
 
 @Client.on_message(filters.command("start") & filters.incoming)
