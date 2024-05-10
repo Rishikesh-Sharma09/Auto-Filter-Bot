@@ -837,7 +837,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.message.reply('Nothing to kick deleted accounts.')
 async def auto_filter(client, msg, spoll=False):
-    thinkStc = await message.reply_sticker(sticker=random.choice(STICKERS_IDS))
+    thinkStc = await msg.reply_sticker(sticker=random.choice(STICKERS_IDS))
     if not spoll:
         message = msg
         settings = await get_settings(message.chat.id)
