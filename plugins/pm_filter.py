@@ -391,8 +391,7 @@ async def upi_payment_info(client, callback_query):
         [
             InlineKeyboardButton("QR ᴄᴏᴅᴇ", callback_data="qrcode_info") ,                   
             InlineKeyboardButton("UPI ID", callback_data="upiid_info")
-        ],
-        [
+        ]+ [            
             InlineKeyboardButton("⇚ Bᴀᴄᴋ", callback_data="buy_premium")
         ]
     ) 
