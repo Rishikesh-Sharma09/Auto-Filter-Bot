@@ -396,11 +396,14 @@ async def upi_payment_info(client, callback_query):
         ]
     ) 
     reply_markup = InlineKeyboardMarkup(btn)
-    await bot.edit_message_media(
-        cmd.chat.id, 
-        cmd.message_id, 
-        InputMediaPhoto('https://graph.org/file/012b0fd51192f9e6506c0.jpg')
-    )
+    try:
+        await client.edit_message_media(
+            cmd.chat.id, 
+            cmd.message_id, 
+            InputMediaPhoto('https://graph.org/file/012b0fd51192f9e6506c0.jpg')
+        )
+    except:
+        pass
     await cmd.edit(
         f"<b>👋 ʜᴇʏ {cmd.from_user.mention},\n    \n⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !\n\n💵 ᴜᴘɪ ɪᴅ - <code>{UPI_ID}</code>\n\n‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>",
         reply_markup = reply_markup
@@ -490,8 +493,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]            
             
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.reply_text(
-            text="**⚡️Buy Premium Now\n\n ╭━━━━━━━━╮\n    Premium Plans\n  • ₹10 - 1 day (Trial)\n  • ₹25 - 1 Week (Trial)\n  • ₹50 - 1 Month\n  • ₹120 - 3 Months\n  • ₹220 - 6 Months\n  • ₹400 - 1 Year\n╰━━━━━━━━╯\n\nPremium Features ♤ᵀ&ᶜ\n\n☆ New/Old Movies and Series\n☆ High Quality available\n☆ Get Files Directly \n☆ High speed Download links\n☆ Full Admin support \n☆ Request will be completed in 1 hour if available.\n\n**",
+        await query.message.reply_photo(
+            photo="https://graph.org/file/ea8423d123dd90e34e10c.jpg",
+            caption="**⚡️Buy Premium Now\n\n ╭━━━━━━━━╮\n    Premium Plans\n  • ₹10 - 1 day (Trial)\n  • ₹25 - 1 Week (Trial)\n  • ₹50 - 1 Month\n  • ₹120 - 3 Months\n  • ₹220 - 6 Months\n  • ₹400 - 1 Year\n╰━━━━━━━━╯\n\nPremium Features ♤ᵀ&ᶜ\n\n☆ New/Old Movies and Series\n☆ High Quality available\n☆ Get Files Directly \n☆ High speed Download links\n☆ Full Admin support \n☆ Request will be completed in 1 hour if available.\n\n**",
             reply_markup=reply_markup
         )
         return 
