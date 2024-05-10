@@ -6,7 +6,7 @@ from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidD
 from Script import script
 from datetime import datetime, timedelta
 from info import STICKERS_IDS, ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DELETE_TIME, FILMS_LINK, AUTH_CHANNEL, IS_VERIFY, VERIFY_EXPIRE, LOG_CHANNEL, SUPPORT_GROUP, SUPPORT_LINK, UPDATES_LINK, PICS, PROTECT_CONTENT, IMDB, AUTO_FILTER, SPELL_CHECK, IMDB_TEMPLATE, AUTO_DELETE, LANGUAGES, IS_FSUB, PAYMENT_QR, GROUP_FSUB, PM_SEARCH, UPI_ID
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ChatPermissions
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ChatPermissions, InputMediaPhoto
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid, ChatAdminRequired
 from utils import get_size, is_subscribed, is_check_admin, get_wish, get_shortlink, get_verify_status, update_verify_status, get_readable_time, get_poster, temp, get_settings, save_group_settings
@@ -391,19 +391,20 @@ async def upi_payment_info(client, callback_query):
         [
             InlineKeyboardButton("QR ᴄᴏᴅᴇ", callback_data="qrcode_info") ,                   
             InlineKeyboardButton("UPI ID", callback_data="upiid_info")
-        ]+ [            
+        ]
+    )
+    btn.append(
+        [            
             InlineKeyboardButton("⇚ Bᴀᴄᴋ", callback_data="buy_premium")
         ]
     ) 
     reply_markup = InlineKeyboardMarkup(btn)
-    try:
-        await client.edit_message_media(
-            cmd.chat.id, 
-            cmd.message_id, 
-            InputMediaPhoto('https://graph.org/file/012b0fd51192f9e6506c0.jpg')
-        )
-    except:
-        pass
+    await client.edit_message_media(
+        cmd.chat.id, 
+        cmd.id, 
+        InputMediaPhoto('https://graph.org/file/012b0fd51192f9e6506c0.jpg')
+    )
+    
     await cmd.edit(
         f"<b>👋 ʜᴇʏ {cmd.from_user.mention},\n    \n⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !\n\n💵 ᴜᴘɪ ɪᴅ - <code>{UPI_ID}</code>\n\n‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>",
         reply_markup = reply_markup
@@ -421,10 +422,10 @@ async def qr_code_info(client, callback_query):
         [InlineKeyboardButton("⇚ Bᴀᴄᴋ", callback_data="Upi")]
     )
     reply_markup = InlineKeyboardMarkup(btn)
-    await bot.edit_message_media(
+    await client.edit_message_media(
         cmd.chat.id, 
-        cmd.message_id, 
-        InputMediaPhoto('PAYMENT_QR')
+        cmd.id, 
+        InputMediaPhoto(PAYMENT_QR)
     )
     await cmd.edit(
         f"<b>👋 ʜᴇʏ {cmd.from_user.mention},\n      \n⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !\n\n‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>",
@@ -1040,5 +1041,4 @@ async def advantage_spell_chok(message):
         await message.delete()
     except:
         pass
-
 
