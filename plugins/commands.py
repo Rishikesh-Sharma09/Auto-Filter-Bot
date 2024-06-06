@@ -184,7 +184,7 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=link)
             ],[
-                InlineKeyboardButton("📍 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 📍", url=settings['tutorial'])
+                InlineKeyboardButton("❗ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ❗", url=settings['tutorial'])
             ]]
             await message.reply(f"<b>ʜᴇʟʟᴏ {message.from_user.mention},\n\n<blockquote>✅ ʏᴏᴜʀ ʟɪɴᴋ ɪs ʀᴇᴀᴅʏ ɴᴏᴡ ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ</blockquote>\n\n ⚠️ Fɪʟᴇ Nᴀᴍᴇ : <code>{files.file_name}</code></b>", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
