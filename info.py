@@ -76,14 +76,14 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Rkbotzsupport')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Rkbotz')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/RkMovie_group')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Rkbotz")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Rkbotz")
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+ef_l9L7eBEU5ODJl')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/hdhindibackup')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+bEarHRzuylxjMTk1')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/hdhindibackup/76")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/hdhindibackup/76")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds 
+DELETE_TIME = int(environ.get('DELETE_TIME', 600)) # Add time in seconds 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 10)) #don't change anything in Language 
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
@@ -100,17 +100,17 @@ STICKERS_IDS = (
 
 # boolean settings 
 GROUP_FSUB = is_enabled('GROUP_FSUB', False) 
-PM_SEARCH = is_enabled('PM_SEARCH', True) #switch True or False for searching results in bot pm😃
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+PM_SEARCH = is_enabled('PM_SEARCH', False) #switch True or False for searching results in bot pm😃
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 AUTO_DELETE = is_enabled('AUTO_DELETE', False)
 WELCOME = is_enabled('WELCOME', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
 LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
-IMDB = is_enabled('IMDB', True)
+IMDB = is_enabled('IMDB', False)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', False)
+SHORTLINK = is_enabled('SHORTLINK', True)
 
 
 PAYMENT_QR = environ.get('PAYMENT_QR', 'http://graph.org/file/cacbbea472e5a48ce0d64.jpg') #telegraph link of your QR code 
