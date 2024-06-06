@@ -176,7 +176,7 @@ async def next_page(bot, query):
     if settings['shortlink']:
         btn.insert(0,
             [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}')),
-            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")]
+            InlineKeyboardButton("‼️ Cʜᴏᴏsᴇ Lᴀɴɢᴜᴀɢᴇ ‼️", callback_data=f"languages#{key}#{req}#{offset}")]
         )
     else:
         btn.insert(0,
@@ -209,7 +209,7 @@ async def next_page(bot, query):
             ]
         )
     btn.append(
-        [InlineKeyboardButton("🚫 ᴄʟᴏsᴇ 🚫", callback_data="close_data")]
+        [InlineKeyboardButton("🔒 ᴄʟᴏsᴇ ", callback_data="close_data")]
     )
     try:
         await query.message.edit_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
