@@ -27,7 +27,7 @@ async def aks_downloader(bot, query):
         InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ", url=watch),
         InlineKeyboardButton("ꜰᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download)
     ],[
-        InlineKeyboardButton('❌ ᴄʟᴏsᴇ ❌', callback_data='close_data')
+        InlineKeyboardButton('✂️ ᴄʟᴏsᴇ ✂️', callback_data='close_data')
     ]]
     await query.edit_message_reply_markup(
         reply_markup=InlineKeyboardMarkup(btn)
