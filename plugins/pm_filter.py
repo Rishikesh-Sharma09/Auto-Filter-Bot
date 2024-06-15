@@ -937,7 +937,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>⏰ sʜᴏᴡ ᴛɪᴍᴇ:-  {runtime} Minutes\n📟 ᴍᴏᴠɪᴇ Nᴀᴍᴇ:- {title}\n🕺 ʀᴇǫᴜᴇsᴛ:- {message.from_user.mention},\n👨‍👩‍👧‍👦 ɢʀᴏᴜᴘ:- {message.chat.title}</b>"
+        cap = f"<b>📟 ᴍᴏᴠɪᴇ Nᴀᴍᴇ:- {title}\n🕺 ʀᴇǫᴜᴇsᴛ:- {message.from_user.mention},\n👨‍👩‍👧‍👦 ɢʀᴏᴜᴘ:- {message.chat.title}</b>"
     CAP[key] = cap
     del_msg = f"\n\n<b>⚠️ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀꜰᴛᴇʀ <code>{get_readable_time(DELETE_TIME)}</code> ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs</b>" if settings["auto_delete"] else ''
     if imdb and imdb.get('poster'):
