@@ -14,13 +14,3 @@
 # Please fork and give star ⭐️
 
 
-```Repo will be updated soon UI and many things this will become one of the best in future so if you import then also create one fork too so you can get notification of recent updates .```
-
-```I have done this all features public quickly without edit and extra features.```
-
-```Because it was really urgent to do this.```
-
-```Also I will add more features and also I will remove extra unwanted things 😊```
-
-
-```All features of premium will be added in this whenever I will get time I will add some best things```
