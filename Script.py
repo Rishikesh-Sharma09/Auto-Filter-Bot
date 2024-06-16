@@ -2,9 +2,9 @@ class script(object):
     START_TXT = """<b>ʜᴇʏ {}, <i>{}</i>
     
 <blockquote>ɪᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ & ᴀᴅᴠᴀɴᴄᴇ ᴀɪ ᴘᴏᴡᴇʀᴅ 🤖 ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ..
-sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ..✨
+sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ..✨<blockquote>
 
-ᴜsᴇ ᴍʏ ᴜsᴇꜰᴜʟ ꜰᴇᴀᴛᴜʀᴇs ᴄʟɪᴄᴋ ᴏɴ ꜰᴇᴀᴛᴜʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 🤞🏻</blockquote></b>"""
+<blockquote>ᴜsᴇ ᴍʏ ᴜsᴇꜰᴜʟ ꜰᴇᴀᴛᴜʀᴇs ᴄʟɪᴄᴋ ᴏɴ ꜰᴇᴀᴛᴜʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 🤞🏻</blockquote></b>"""
 
     MY_ABOUT_TXT = """<b>★ Server: <a href=https://www.heroku.com>Heroku</a>
 ★ Database: <a href=https://www.mongodb.com>MongoDB</a>
