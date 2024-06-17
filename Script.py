@@ -6,21 +6,21 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 
 <blockquote>ᴜsᴇ ᴍʏ ᴜsᴇꜰᴜʟ ꜰᴇᴀᴛᴜʀᴇs ᴄʟɪᴄᴋ ᴏɴ ꜰᴇᴀᴛᴜʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 🤞🏻</blockquote></b>"""
 
-    MY_ABOUT_TXT = """<b>★ Server: <a href=https://www.heroku.com>Heroku</a>
+    MY_ABOUT_TXT = """★ Server: <a href=https://www.heroku.com>Heroku</a>
 ★ Database: <a href=https://www.mongodb.com>MongoDB</a>
 ★ Language: <a href=https://www.python.org>Python</a>
-★ Library: <a href=https://pyrogram.org>Pyrogram</a></b>"""
+★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
 
     MY_OWNER_TXT = """✯ Mʏ Nᴀᴍᴇ : <a href=https://t.me/+bEarHRzuylxjMTk1>RK Bᴏᴛs</a>
 ★ Username: @RolexHxD
 ✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/+bEarHRzuylxjMTk1>Iᴍᴅʙ ᴜᴘᴅᴀᴛᴇ</a>"""
 
-    STATUS_TXT = """🗂 Total Files: <code>{}</code>
+    STATUS_TXT = """<b>🗂 Total Files: <code>{}</code>
 👤 Total Users: <code>{}</code>
 👥 Total Chats: <code>{}</code>
 ✨ Used Storage: <code>{}</code>
 🗳 Free Storage: <code>{}</code>
-🚀 Bot Uptime: <code>{}</code>"""
+🚀 Bot Uptime: <code>{}</code></b>"""
 
     NEW_GROUP_TXT = """#NewGroup
 Title - {}
@@ -92,9 +92,9 @@ I can't find the <b>{}</b> in my database! 🥲
 🗣 Requested by: {message.from_user.mention}
 ©️ Powered by: <b>{message.chat.title}</b>"""
 
-    FILE_CAPTION = """<a href=https://t.me/+bEarHRzuylxjMTk1>{file_name}</a>
+    FILE_CAPTION = """<b><a href=https://t.me/+bEarHRzuylxjMTk1>{file_name}</a>
 
-<i> ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ </i>"""
+<u> to ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ </u><\b>"""
 
     WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞"""
 
