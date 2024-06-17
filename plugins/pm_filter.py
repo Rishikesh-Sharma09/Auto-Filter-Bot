@@ -169,7 +169,7 @@ async def next_page(bot, query):
             files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
     else:
         btn = [[
-            InlineKeyboardButton(text=f"📂 {get_size(file.file_size)} {file.file_name}", callback_data=f'file#{file.file_id}')
+            InlineKeyboardButton(text=f"⚡ {get_size(file.file_size)}▪️{file.file_name}", callback_data=f'file#{file.file_id}')
         ]
             for file in files
         ]
@@ -194,7 +194,7 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ BΔCҜ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"{math.ceil(int(offset) / MAX_BTN) + 1}/{math.ceil(total / MAX_BTN)}", callback_data="buttons")]
+             InlineKeyboardButton(f"📆 {math.ceil(int(offset) / MAX_BTN) + 1}/{math.ceil(total / MAX_BTN)}", callback_data="buttons")]
         )
     elif off_set is None:
         btn.append(
@@ -209,7 +209,7 @@ async def next_page(bot, query):
             ]
         )
     btn.append(
-        [InlineKeyboardButton("ᴄʟᴏsᴇ 🌂", callback_data="close_data")]
+        [InlineKeyboardButton("ᴄʟᴏsᴇ 💣", callback_data="close_data")]
     )
     try:
         await query.message.edit_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
@@ -256,7 +256,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
     else:
         btn = [[
-            InlineKeyboardButton(text=f"📂 {get_size(file.file_size)} {file.file_name}", callback_data=f'file#{file.file_id}')
+            InlineKeyboardButton(text=f"⚡ {get_size(file.file_size)}▪️{file.file_name}", callback_data=f'file#{file.file_id}')
         ]
             for file in files
         ]
@@ -866,7 +866,7 @@ async def auto_filter(client, msg, spoll=False):
             files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
     else:
         btn = [[
-            InlineKeyboardButton(text=f"📂 {get_size(file.file_size)} {file.file_name}", callback_data=f'file#{file.file_id}')
+            InlineKeyboardButton(text=f"⚡ {get_size(file.file_size)}▪️{file.file_name}", callback_data=f'file#{file.file_id}')
         ]
             for file in files
         ]
@@ -900,7 +900,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", callback_data="buttons")]
         )
     btn.append(
-        [InlineKeyboardButton("ᴄʟᴏsᴇ 🌂", callback_data="close_data")]
+        [InlineKeyboardButton("ᴄʟᴏsᴇ 🍥", callback_data="close_data")]
     )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
