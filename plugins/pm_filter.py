@@ -194,7 +194,7 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ BΔCҜ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📆 {math.ceil(int(offset) / MAX_BTN) + 1}/{math.ceil(total / MAX_BTN)}", callback_data="buttons")]
+             InlineKeyboardButton(f"📚 PΔGΣ:{math.ceil(int(offset) / MAX_BTN) + 1}/{math.ceil(total / MAX_BTN)}", callback_data="buttons")]
         )
     elif off_set is None:
         btn.append(
@@ -340,7 +340,7 @@ async def lang_next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ BΔCҜ", callback_data=f"lang_next#{req}#{key}#{lang}#{b_offset}#{offset}"),
-             InlineKeyboardButton(f"📆 {math.ceil(int(l_offset) / MAX_BTN) + 1}/{math.ceil(total / MAX_BTN)}", callback_data="buttons")]
+             InlineKeyboardButton(f"📚 PΔGΣ:{math.ceil(int(l_offset) / MAX_BTN) + 1}/{math.ceil(total / MAX_BTN)}", callback_data="buttons")]
         )
     elif b_offset is None:
         btn.append(
