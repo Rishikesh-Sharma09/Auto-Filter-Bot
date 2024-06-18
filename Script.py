@@ -141,6 +141,6 @@ I can't find the <b>{}</b> in my database! 🥲
 
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ Pʀɪᴠᴀᴛᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
-- ꜱᴏᴜʀᴄᴇ - <a href=https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot>ʜᴇʀᴇ</a>
+- ꜱᴏᴜʀᴄᴇ - <a href=https://t.me/+bEarHRzuylxjMTk1> ᴄʟɪᴄᴋ ʜᴇʀᴇ </a>
 
-- ᴅᴇᴠʟᴏᴘᴇʀ - @Rkbotz"""
+- ᴅᴇᴠʟᴏᴘᴇʀ - @Kalibotz"""
