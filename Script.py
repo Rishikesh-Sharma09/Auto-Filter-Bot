@@ -11,9 +11,9 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 ★ Language: <a href=https://www.python.org>Python</a>
 ★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
 
-    MY_OWNER_TXT = """✯ Mʏ Nᴀᴍᴇ : <a href=https://t.me/+bEarHRzuylxjMTk1>RK Bᴏᴛs</a>
-★ Username: @RolexHxD
-✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/+bEarHRzuylxjMTk1>Iᴍᴅʙ ᴜᴘᴅᴀᴛᴇ</a>"""
+    MY_OWNER_TXT = """🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/+bEarHRzuylxjMTk1>RK Bᴏᴛs</a>
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : @RolexHxD
+📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/+bEarHRzuylxjMTk1>Iᴍᴅʙ ᴜᴘᴅᴀᴛᴇ</a>"""
 
     STATUS_TXT = """🗂 Total Files: <code>{}</code>
 👤 Total Users: <code>{}</code>
