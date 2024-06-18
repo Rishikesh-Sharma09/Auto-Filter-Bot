@@ -15,12 +15,12 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 ★ Username: @RolexHxD
 ✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/+bEarHRzuylxjMTk1>Iᴍᴅʙ ᴜᴘᴅᴀᴛᴇ</a>"""
 
-    STATUS_TXT = """<b>🗂 Total Files: <code>{}</code>
-👤 Total Users: <code>{}</code>
-👥 Total Chats: <code>{}</code>
-✨ Used Storage: <code>{}</code>
-🗳 Free Storage: <code>{}</code>
-🚀 Bot Uptime: <code>{}</code></b>"""
+    STATUS_TXT = """🗂 ᴛᴏᴛᴀʟ ғɪʟᴇs: <code>{}</code>
+👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
+♻️ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs:  <code>{}</code>
+🗃️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
+🗳 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code>
+🚀 Bot Uptime: <code>{}</code>"""
 
     NEW_GROUP_TXT = """#NewGroup
 Title - {}
