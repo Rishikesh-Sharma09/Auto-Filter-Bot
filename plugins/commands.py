@@ -67,7 +67,7 @@ async def start(client, message):
             InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🌿 ꜱᴜᴘᴘᴏʀᴛ', callback_data="my_about"),
-                    InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
+                    InlineKeyboardButton('🕵️ Aʙᴏᴜᴛ', callback_data='my_owner')
                 ],[
                     InlineKeyboardButton('🍁 ғᴇᴀᴛᴜʀᴇs', callback_data='help'),
                     InlineKeyboardButton('🔐 ᴘʀᴇᴍɪᴜᴍ', callback_data='buy_premium')
@@ -184,7 +184,7 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=link)
             ],[
-                InlineKeyboardButton("❗ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ❗", url=settings['tutorial'])
+                InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️", url=settings['tutorial'])
             ]]
             await message.reply(f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, {get_wish()}\n\n<blockquote>✅ ʏᴏᴜʀ ʟɪɴᴋ ɪs ʀᴇᴀᴅʏ ɴᴏᴡ ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ</blockquote>\n\n ⚠️ Fɪʟᴇ Nᴀᴍᴇ : <code>{files.file_name}</code></b>", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
