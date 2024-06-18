@@ -6,13 +6,13 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 
 <blockquote>ᴜsᴇ ᴍʏ ᴜsᴇꜰᴜʟ ꜰᴇᴀᴛᴜʀᴇs ᴄʟɪᴄᴋ ᴏɴ ꜰᴇᴀᴛᴜʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 🤞🏻</blockquote></b>"""
 
-    MY_ABOUT_TXT = """📡 ʜᴏsᴛᴇᴅ ᴏɴ : <a href=https://www.heroku.com>Heroku</a>
-💻 ᴅᴀᴛᴀʙᴀsᴇ: <a href=https://www.mongodb.com>MongoDB</a>
-📝 ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>Python</a>
+    MY_ABOUT_TXT = """📡 ʜᴏsᴛᴇᴅ ᴏɴ : <a href=https://www.heroku.com>Heroku</a>/n
+💻 ᴅᴀᴛᴀʙᴀsᴇ: <a href=https://www.mongodb.com>MongoDB</a>/n
+📝 ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>Python</a>/n
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://pyrogram.org>Pyrogram</a>"""
 
-    MY_OWNER_TXT = """🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/+bEarHRzuylxjMTk1>RK Bᴏᴛs</a>
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : @RolexHxD
+    MY_OWNER_TXT = """🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/+bEarHRzuylxjMTk1>RK Bᴏᴛs</a>/n
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : @RolexHxD /n
 📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/+bEarHRzuylxjMTk1>Iᴍᴅʙ ᴜᴘᴅᴀᴛᴇ</a>"""
 
     STATUS_TXT = """🗂 Total Files: <code>{}</code>
