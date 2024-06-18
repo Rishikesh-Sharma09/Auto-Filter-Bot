@@ -6,10 +6,10 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 
 <blockquote>ᴜsᴇ ᴍʏ ᴜsᴇꜰᴜʟ ꜰᴇᴀᴛᴜʀᴇs ᴄʟɪᴄᴋ ᴏɴ ꜰᴇᴀᴛᴜʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 🤞🏻</blockquote></b>"""
 
-    MY_ABOUT_TXT = """★ Server: <a href=https://www.heroku.com>Heroku</a>
-★ Database: <a href=https://www.mongodb.com>MongoDB</a>
-★ Language: <a href=https://www.python.org>Python</a>
-★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
+    MY_ABOUT_TXT = """📡 ʜᴏsᴛᴇᴅ ᴏɴ : <a href=https://www.heroku.com>Heroku</a>
+💻 ᴅᴀᴛᴀʙᴀsᴇ: <a href=https://www.mongodb.com>MongoDB</a>
+📝 ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>Python</a>
+📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://pyrogram.org>Pyrogram</a>"""
 
     MY_OWNER_TXT = """🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/+bEarHRzuylxjMTk1>RK Bᴏᴛs</a>
 👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : @RolexHxD
