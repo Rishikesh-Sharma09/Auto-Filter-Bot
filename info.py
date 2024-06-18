@@ -85,7 +85,7 @@ VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/hdhindibackup/76"
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 600)) # Add time in seconds 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-MAX_BTN = int(environ.get('MAX_BTN', 6)) #don't change anything in Language 
+MAX_BTN = int(environ.get('MAX_BTN', 8)) #don't change anything in Language 
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
