@@ -10,7 +10,7 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 
 💻 ᴅᴀᴛᴀʙᴀsᴇ: <a href=https://www.mongodb.com>MongoDB</a>
 
-📝 ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>Python</a>/n
+📝 ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>Python</a>
 
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://pyrogram.org>Pyrogram</a>"""
 
