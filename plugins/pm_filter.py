@@ -538,7 +538,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         await query.answer('Welcome!')
         buttons = [[
-            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('🔋 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ 🔋', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
             InlineKeyboardButton('🌿 ꜱᴜᴘᴘᴏʀᴛ', callback_data="my_about"),
             InlineKeyboardButton('🕵️ Aʙᴏᴜᴛ', callback_data='my_owner')
@@ -558,7 +558,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "my_about":
         buttons = [[
             InlineKeyboardButton('📊 sᴛᴀᴛᴜs', callback_data='stats'),
-            InlineKeyboardButton('🔋 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('🧬 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
         ],[
             InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
         ]]
