@@ -3,7 +3,6 @@ class script(object):
     
 <blockquote>ɪᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ & ᴀᴅᴠᴀɴᴄᴇ ᴀɪ ᴘᴏᴡᴇʀᴅ 🤖 ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ..
 sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ..✨</blockquote>
-
 <blockquote>ᴜsᴇ ᴍʏ ᴜsᴇꜰᴜʟ ꜰᴇᴀᴛᴜʀᴇs ᴄʟɪᴄᴋ ᴏɴ ꜰᴇᴀᴛᴜʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 🤞🏻</blockquote></b>"""
 
     MY_ABOUT_TXT = """📡 ʜᴏsᴛᴇᴅ ᴏɴ : <a href=https://www.heroku.com>Heroku</a>
