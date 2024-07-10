@@ -25,6 +25,7 @@ If You Encounter Any Issues **Deploying** The Repo, Feel Free To Seek Assistance
 
 ### Features
 <details>
+<summary><b>Features</b></summary>
  
 Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/blob/master/readme/FEATURES.md) of the bot.
  
@@ -33,9 +34,12 @@ Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filt
  
  </details>
 
+<details>
+<summary><b>Commands</b></summary>
 
 
-
+- Auto Filter
+</details>
 
 
 
@@ -89,6 +93,6 @@ This repository is provided for educational purposes only. It is not intended fo
 
 
 
-This project is licensed under the [MIT License]()
+This project is licensed under the [GNU License](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/blob/master/LICENSE)
 
 
