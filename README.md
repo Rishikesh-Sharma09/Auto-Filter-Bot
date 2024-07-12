@@ -6,7 +6,9 @@
 </h1>
 
 
-### Deployment Support Given Below 👇
+### Deployment 
+<details>
+<summary><b>Deployment Instructions Here</b></summary>
 
 
 
@@ -21,9 +23,9 @@ If You Encounter Any Issues **Deploying** The Repo, Feel Free To Seek Assistance
 
 ## How To Deploy
 [Click Here to Check Deployment Guide](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/blob/master/readme/DEPLOYMENT.md)
+</details>
 
-
-### Features
+## Features
 <details>
 <summary><b>Features</b></summary>
  
@@ -34,6 +36,7 @@ Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filt
  
  </details>
 
+## Commands 
 <details>
 <summary><b>Commands</b></summary>
 
