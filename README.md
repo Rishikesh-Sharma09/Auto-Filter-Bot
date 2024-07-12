@@ -27,7 +27,7 @@ If You Encounter Any Issues **Deploying** The Repo, Feel Free To Seek Assistance
 
 ## Features
 <details>
-<summary><b>Features</b></summary>
+<summary><b>Check All Features Of This Repo</b></summary>
  
 Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/blob/master/readme/FEATURES.md) of the bot.
  
@@ -38,7 +38,7 @@ Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filt
 
 ## Commands 
 <details>
-<summary><b>Commands</b></summary>
+<summary><b>Check All Commands Here</b></summary>
 
 
 - Auto Filter
@@ -60,7 +60,7 @@ Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filt
 * [![Rishikesh](https://img.shields.io/static/v1?label=Rishikesh-Sharma&message=RK_Botz&color=yellow)](https://telegram.me/Rk_botowner)
 * [![Mr. Infinity](https://img.shields.io/static/v1?label=Mr.Infinity&message=Infinity_Botz&color=blue)](https://telegram.me/infinitymp07)
 * [![ᕼᗩᘉSᗩᖽᐸᗩ](https://img.shields.io/static/v1?label=ᕼᗩᘉSᗩᖽᐸᗩ&message=HA_Bots&color=critical)](https://github.com/HA-Bots)
-* [![Technical AKS](https://img.shields.io/static/v1?label=Technical_AKS&message=Tg&color=critical)]()
+* [![Technical AKS](https://img.shields.io/static/v1?label=Technical_AKS&message=Tg&color=critical)](https://github.com/technicalaks)  [![Kunal](https://img.shields.io/static/v1?label=KD-Botz&message=Tg&color=critical)](https://github.com/KDBotz)
 * [![Bisal](https://img.shields.io/static/v1?label=Bisal&message=Tg&color=critical)](https://github.com/biisal) [![Joelkb](https://img.shields.io/static/v1?label=Joelkb&message=Tg&color=critical)](https://github.com/Joelkbhttps://github.com/technicalaks)
 *  and [All Contributors](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/graphs/contributors) for Free Help ☺️
 
