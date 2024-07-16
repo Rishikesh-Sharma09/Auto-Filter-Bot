@@ -5,9 +5,11 @@ marshmallow
 umongo
 pymongo
 pytz
-cinemagoer
+git+https://github.com/Joelkb/cinemagoer
 shortzy
 aiohttp
 aiofiles
 telegraph
 speedtest-cli
+fuzzywuzzy
+python-Levenshtein
