@@ -5,6 +5,7 @@
   <b>RK FILTER BOT</b>
 </h1>
 
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝐓𝐡𝐢𝐬+𝐢𝐬+𝐑𝐊+𝐅𝐢𝐥𝐭𝐞𝐫+𝐁𝐎𝐓!;𝐂𝐫𝐞𝐚𝐭𝐞𝐝+𝐁𝐲+𝐑𝐊+𝐁𝐨𝐭𝐳™;𝗔+𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥+𝐓𝐠+𝐀𝐮𝐭𝐨𝐟𝐢𝐥𝐭𝐞𝐫+𝐁𝐨𝐭;𝐖𝐢𝐭𝐡+𝐋𝐚𝐭𝐞𝐬𝐭+𝐚𝐧𝐝+𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝+𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬)</p>
 
 ### Deployment 
 <details>
@@ -21,7 +22,9 @@ If You Encounter Any Issues **Deploying** The Repo, Feel Free To Seek Assistance
 [![Join Support Group    ](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Rkbotz)](https://t.me/Rkbotz)
 
 
-## How To Deploy
+### How To Deploy
+
+
 [Click Here to Check Deployment Guide](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/blob/master/readme/DEPLOYMENT.md)
 </details>
 
@@ -29,7 +32,8 @@ If You Encounter Any Issues **Deploying** The Repo, Feel Free To Seek Assistance
 <details>
 <summary><b>Check All Features Of This Repo</b></summary>
  
-Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/blob/master/readme/FEATURES.md) of the bot.
+
+<b>Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot/blob/master/readme/FEATURES.md) of the bot.</b>
  
   
  [![Sample Bot](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Rkbotz)](https://t.me/Rkbotz)
@@ -39,9 +43,49 @@ Click [Here To See All Features](https://github.com/Rishikesh-Sharma09/Auto-Filt
 ## Commands 
 <details>
 <summary><b>Check All Commands Here</b></summary>
-
-
-- Auto Filter
+  
+```
+start - Start The Bot
+ask - Ask To AI
+my_plan - To Check Current Plan active on account
+plans - To Get The Plans
+set_shortlink - To Set Shortlink for the Group 
+set_tutorial - To Set Tutorial Video For The Shortlink 
+set_shortlink2- To Set  Second Shortlink for the Group 
+set_tutorial2 - To Set Second Tutorial Video For The Second Shortlink 
+set_shortlink3 - To Set Third Shortlink for the Group 
+set_tutorial3 - To Set Third Tutorial Video For The Shortlink 
+set_fsub - To Set Force Subscribe Channel For Your Group
+set_welcome - To Set Custom Welcome Message For New Joined Users  For Group
+set_template - To Set Custom Imdb Template
+set_caption - To Set Custom Caption
+get_custom_settings - To Get Your Group Settings Details
+settings - To Change Group Settings As Your Wish
+logs - To Get Logs 
+id - To Get TG Id or Group Id
+stats - To Check The Statistics of Bot
+index_channels - To Get The List of Index Channels
+delete - To Delete Files from mongodb with a keyword
+mute - To Mute a User in Any Group [Group Management]
+unmute - To Unmutr a User From The Group [Group Management]
+ban - Ban a User in Group [Group Management]
+unban - Unban a User from Group
+telegraph - Upload a file and get Telegraph Link
+add_premium - [Bot Admin Only]Add a Member in Premium Membership Plan
+remove_premium - [Bot Admin Only]Remove a user from Premium Subscription
+broadcast - To Broadcast Users
+pin_broadcast - Pin Broadcast in User PM
+grp_broadcast - Group Broadcast 
+pin_grp_broadcast - Pin in Group Broadcast 
+users - Check Users in DB
+chats - Chats Available in DB
+ban_user - Ban a User To Use The Bot
+unban_user - Unban The Banned User 
+ban_grp - Ban a Group To Use The Bot
+invite_link - Get Invition Link
+restart - Re-Start the bot
+```
+  
 </details>
 
 
