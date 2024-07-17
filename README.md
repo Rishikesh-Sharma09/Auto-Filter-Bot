@@ -7,7 +7,7 @@
 
 ![Fork](https://img.shields.io/github/forks/Rishikesh-Sharma09/Auto-Filter-Bot?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/Rishikesh-Sharma09/Auto-Filter-Bot?color=%23&style=for-the-badge)
-[![Size](https://img.shields.io/github/repo-size/Rishikesh-Sharma09/Auto-Filter-Bot?style=flat-square&color=green)](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot)  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+[![Size](https://img.shields.io/github/repo-size/Rishikesh-Sharma09/Auto-Filter-Bot?color=green&style=for-the-badge)](https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot)  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝐓𝐡𝐢𝐬+𝐢𝐬+𝐑𝐊+𝐅𝐢𝐥𝐭𝐞𝐫+𝐁𝐎𝐓!;𝐂𝐫𝐞𝐚𝐭𝐞𝐝+𝐁𝐲+𝐑𝐊+𝐁𝐨𝐭𝐳™;𝗔+𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥+𝐓𝐠+𝐀𝐮𝐭𝐨𝐟𝐢𝐥𝐭𝐞𝐫+𝐁𝐨𝐭;𝐖𝐢𝐭𝐡+𝐋𝐚𝐭𝐞𝐬𝐭+𝐚𝐧𝐝+𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝+𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬)</p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
