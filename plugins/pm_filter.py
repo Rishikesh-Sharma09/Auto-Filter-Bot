@@ -999,7 +999,7 @@ async def auto_filter(client, msg, spoll=False):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             if settings["auto_delete"]:
-                await thinkStc.delete()
+                await delSticker(thinkStc)
                 k = await message.reply_photo(photo=poster, caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), quote=True)
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
