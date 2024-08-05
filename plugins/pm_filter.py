@@ -1035,7 +1035,7 @@ async def auto_filter(client, msg, spoll=False):
                 pass
         else:
             await delSticker(thinkStc)
-                await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, quote=True)
+            await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, quote=True)
 
 async def advantage_spell_chok(message):
     search = message.text
