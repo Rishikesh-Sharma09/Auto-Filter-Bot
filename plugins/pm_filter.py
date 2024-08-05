@@ -1008,11 +1008,11 @@ async def auto_filter(client, msg, spoll=False):
                 except:
                     pass
             else:
-                await thinkStc.delete()
+                await delSticker(thinkStc)
                 await message.reply_photo(photo=poster, caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), quote=True)
         except Exception as e:
             if settings["auto_delete"]:
-                await thinkStc.delete()
+                await delSticker(thinkStc)
                 k = await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, quote=True)
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
@@ -1021,7 +1021,7 @@ async def auto_filter(client, msg, spoll=False):
                 except:
                     pass
             else:
-                await thinkStc.delete()
+                await delSticker(thinkStc)
                 await message.reply_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, quote=True)
     else:
         if settings["auto_delete"]:
