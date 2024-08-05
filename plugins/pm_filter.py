@@ -9,9 +9,10 @@ from info import STICKERS_IDS, ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DEL
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ChatPermissions, InputMediaPhoto
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid, ChatAdminRequired
-from utils import get_size, is_subscribed, is_check_admin, get_wish, get_shortlink, get_verify_status, update_verify_status, get_readable_time, get_poster, temp, get_settings, save_group_settings
+from utils import get_size, is_subscribed, is_check_admin, get_wish, get_shortlink, get_verify_status, update_verify_status, get_readable_time, get_poster, temp, get_settings, save_group_settings , imdb
 from database.users_chats_db import db
 from database.ia_filterdb import Media, get_file_details, get_search_results,delete_files
+from fuzzywuzzy import process
 
 BUTTONS = {}
 CAP = {}
@@ -839,8 +840,34 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.reply(f"Successfully kicked deleted <code>{len(users_id)}</code> accounts.")
         else:
             await query.message.reply('Nothing to kick deleted accounts.')
-            
+
+async def ai_spell_check(wrong_name):
+    async def search_movie(wrong_name):
+        search_results = imdb.search_movie(wrong_name)
+        movie_list = [movie['title'] for movie in search_results]
+        return movie_list
+    movie_list = await search_movie(wrong_name)
+    if not movie_list:
+        return
+    for _ in range(5):
+        closest_match = process.extractOne(wrong_name, movie_list)
+        if not closest_match or closest_match[1] <= 80:
+            return 
+        movie = closest_match[0]
+        files, offset, total_results = await get_search_results(movie)
+        if files:
+            return movie
+        movie_list.remove(movie)
+    return
+
+
+async def delSticker(st):
+    try:
+        await st.delete()
+    except:
+        pass
 async def auto_filter(client, msg, spoll=False):
+    thinkStc = ''
     thinkStc = await msg.reply_sticker(sticker=random.choice(STICKERS_IDS))
     if not spoll:
         message = msg
@@ -849,7 +876,17 @@ async def auto_filter(client, msg, spoll=False):
         files, offset, total_results = await get_search_results(search)
         if not files:
             if settings["spell_check"]:
-                await thinkStc.delete()
+                await delSticker(thinkStc)
+                ai_sts = await msg.reply_text('<b>Ai is Cheking For Your Spelling. Please Wait.</b>')
+                is_misspelled = await ai_spell_check(search)
+                if is_misspelled:
+                    await ai_sts.edit(f'<b>Ai Suggested <code>{is_misspelled}</code>\nSo Im Searching for <code>{is_misspelled}</code></b>')
+                    await asyncio.sleep(2)
+                    msg.text = is_misspelled
+                    await ai_sts.delete()
+                    return await auto_filter(client, msg)
+                await delSticker(thinkStc)
+                await ai_sts.delete()
                 await advantage_spell_chok(msg)
             return
     else:
@@ -947,7 +984,7 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             if settings["auto_delete"]:
-                await thinkStc.delete()
+                await delSticker(thinkStc)
                 k = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), quote=True)
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
@@ -956,7 +993,7 @@ async def auto_filter(client, msg, spoll=False):
                 except:
                     pass
             else:
-                await thinkStc.delete()
+                await delSticker(thinkStc)
                 await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024] + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), quote=True)
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
