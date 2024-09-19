@@ -26,11 +26,11 @@ def upload_image_requests(image_path):
 async def upload_command(client, message):
     replied = message.reply_to_message
     if not replied:
-        await message.reply_text("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 512ᴍʙ")
+        await message.reply_text("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 5ᴍʙ")
         return
 
     if replied.media and hasattr(replied, 'file_size'):
-        if replied.file_size > 536870912:
+        if replied.file_size > 5242880: #5mb
             await message.reply_text("File size is greater than 512 MB.")
             return
 
