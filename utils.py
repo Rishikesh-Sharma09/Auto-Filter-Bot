@@ -269,3 +269,7 @@ async def get_seconds(time_string):
         return value * 86400 * 365
     else:
         return 0
+
+async def delayed_delete(Bot, message, delay):
+    await asyncio.sleep(delay)
+    await Bot.delete_messages(chat_id=message.chat.id, message_ids=message.id)
