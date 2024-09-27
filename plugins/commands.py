@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id, delete_files
 from database.users_chats_db import db
 from info import STICKERS_IDS,SUPPORT_GROUP ,INDEX_CHANNELS, ADMINS, IS_VERIFY, VERIFY_TUTORIAL, VERIFY_EXPIRE, TUTORIAL, SHORTLINK_API, SHORTLINK_URL, AUTH_CHANNEL, DELETE_TIME, SUPPORT_LINK, UPDATES_LINK, LOG_CHANNEL, PICS, PROTECT_CONTENT, IS_STREAM, IS_FSUB, PAYMENT_QR
-from utils import get_settings, get_size, is_subscribed, is_check_admin, get_shortlink, get_verify_status, update_verify_status, save_group_settings, temp, get_readable_time, get_wish, get_seconds
+from utils import get_settings, delayed_delete, get_size, is_subscribed, is_check_admin, get_shortlink, get_verify_status, update_verify_status, save_group_settings, temp, get_readable_time, get_wish, get_seconds
 import requests
 from telegraph import upload_file
 
@@ -163,13 +163,15 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('⁉️ ᴄʟᴏsᴇ ⁉️', callback_data='close_data')
                 ]]
-            await client.send_cached_media(
+            sent_message = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file.file_id,
                 caption=f_caption,
                 protect_content=settings['file_secure'],
                 reply_markup=InlineKeyboardMarkup(btn)
             )
+            asyncio.create_task(delayed_delete(client, sent_message, 600)
+        await message.reply("<b>This file will be deleted after 10 min so please forward it in your saved messages.</b>")                                   
         return
 
     type_, grp_id, file_id = mc.split("_", 2)
@@ -213,13 +215,15 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('⁉️ ᴄʟᴏsᴇ ⁉️', callback_data='close_data')
         ]]
-    await client.send_cached_media(
+    sent_message = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
         protect_content=settings['file_secure'],
         reply_markup=InlineKeyboardMarkup(btn)
     )
+    await sent_message.reply("<b>This file will be deleted after 10 min so please forward it in your saved messages.</b>")
+    asyncio.create_task(delayed_delete(client, sent_message, 600)
 
 @Client.on_message(filters.command('index_channels') & filters.user(ADMINS))
 async def channels_info(bot, message):
