@@ -13,3 +13,4 @@ aiofiles
 speedtest-cli
 fuzzywuzzy
 python-Levenshtein
+dnspython

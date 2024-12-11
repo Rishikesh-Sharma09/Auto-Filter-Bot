@@ -624,6 +624,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "help":
         buttons = [[
+            InlineKeyboardButton('Group Commands', callback_data='infinity_group_commands')
+        ],[
             InlineKeyboardButton('User Command', callback_data='user_command'),
             InlineKeyboardButton('Admin Command', callback_data='admin_command')
         ],[
@@ -656,7 +658,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.ADMIN_COMMAND_TXT,
             reply_markup=reply_markup
         )
-
+    elif query.data == "infinity_group_commands":
+        buttons = [[
+            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GROUP_COMMAND_TXT,
+            reply_markup=reply_markup
+        )
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('≼ ʙᴀᴄᴋ', callback_data='my_about')

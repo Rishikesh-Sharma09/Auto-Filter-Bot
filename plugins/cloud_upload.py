@@ -1,7 +1,7 @@
 #use code with proper credit 
 # stealing code and mark itas own doesn't make you developer You fool.
 #use & customise as per your requirement but with giving proper credit.
-#©Rkbotz.t.me ©@infinity_botz.t.me
+#©Rkbotz.t.me ©@infinity_botz.t.me <telegram>
 import os, asyncio, requests
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton

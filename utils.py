@@ -225,7 +225,7 @@ def get_readable_time(seconds):
     return result
 
 def get_wish():
-    tz = pytz.timezone('Asia/Colombo')
+    tz = pytz.timezone('Asia/Kolkata')
     time = datetime.now(tz)
     now = time.strftime("%H")
     if now < "12":

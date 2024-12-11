@@ -108,6 +108,7 @@ I can't find the <b>{}</b> in my database! 🥲
 /pin_broadcast - to send message as pin to all bot users.
 /pin_grp_broadcast - to send message as pin to all groups.
 /restart - to restart bot
+/speedtest - check ul/dl
 /leave - to leave your bot from particular group
 /unban_grp - to enable group
 /ban_grp - to disable group
@@ -119,6 +120,23 @@ I can't find the <b>{}</b> in my database! 🥲
 /index - to index bot accessible channels
 /add_premium - to add user in premium
 /remove_premium - to remove user from premium</b>"""
+
+    GROUP_COMMAND_TXT = """<b>Here is some (group managment) Group Admin commands
+/manage - To perform bulk group actions
+/ban - To ban a member from group
+/unban - To unban a member from group
+/mute - To mute a member from group
+/unmute - To unmute a member from group
+/settings - to change group settings as your wish
+/set_template - to set custom imdb template
+/set_caption - to set custom bot files caption
+/set_shortlink - group admin can set custom shortlink
+/get_custom_settings - to get your group settings details
+/set_welcome - to set custom new joined users welcome message for group
+/set_tutorial - to set custom tutorial link in result page button
+/id - to check group or channel id
+
+    Make sure that bot has all permission in the group as administrator.</b>"""
     
     USER_COMMAND_TXT = """<b>Here is bot user commands 👇
 

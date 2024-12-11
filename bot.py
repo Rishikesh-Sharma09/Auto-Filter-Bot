@@ -3,7 +3,7 @@ from database.ia_filterdb import Media
 from aiohttp import web
 from database.users_chats_db import db
 from web import web_app
-from info import LOG_CHANNEL, API_ID, API_HASH, BOT_TOKEN, PORT, BIN_CHANNEL
+from info import LOG_CHANNEL, API_ID, API_HASH, BOT_TOKEN, PORT, BIN_CHANNEL, SUPPORT_GROUP
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
@@ -41,6 +41,7 @@ class Bot(Client):
         temp.ME = me.id
         temp.U_NAME = me.username
         temp.B_NAME = me.first_name
+        temp.B_LINK = me.mention
         username = '@' + me.username
         app = web.AppRunner(web_app)
         await app.setup()
@@ -55,6 +56,11 @@ class Bot(Client):
             await m.delete()
         except:
             print("Error - Make sure bot admin in BIN_CHANNEL, exiting now")
+            exit()
+        try:
+            await self.send_message(chat_id=SUPPORT_GROUP, text=f"<b>{me.mention} Restarted! 🤖</b>")
+        except:
+            print("Error - Make sure bot admin in SUPPORT GROUP, exiting now")
             exit()
         print(f"\nPyrogram [v{__version__}] Bot [{username}] Started With Python [v{platform.python_version()}]\n")
 

@@ -1,8 +1,6 @@
 # (c) github - @Rishikesh-Sharma09 ,telegram - https://telegram.me/Rk_botz
 # removing credits doesn't make you coder 
-
 # New better way of indexing and skipping added 
-
 import logging
 import asyncio
 from pyrogram import Client, filters, enums
@@ -138,7 +136,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                     await msg.edit(f"Successfully Cancelled!\nCompleted in {time_taken}\n\nSaved <code>{total_files}</code> files to Database!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>\nUnsupported Media: <code>{unsupported}</code>\nErrors Occurred: <code>{errors}</code>")
                     return
                 current += 1
-                if current % 30 == 0:
+                if current % 60 == 0:
                     btn = [[
                         InlineKeyboardButton('CANCEL', callback_data=f'index#cancel#{chat}#{lst_msg_id}#{skip}')
                     ]]
