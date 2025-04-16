@@ -158,7 +158,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                     unsupported += 1
                     continue
                 media.caption = message.caption
-                sts = await save_file(media)
+                sts = await save_file(message, media)
                 if sts == 'suc':
                     total_files += 1
                 elif sts == 'dup':
