@@ -1,0 +1,46 @@
+- <b>3 Shortner </b>Verification Mode
+- <b>3 times set</b> for verification 
+- Advance <b> Spell Check </b> Mode
+- Premium <b>User Refferal </b> Mode
+- <b>Premium User Access </b> Mode
+- Custom <b> Force Subscribe </b> Mode
+- <b>Multiple Force Subscribe</b> Channel
+- <b>Request To Join Mode</b>
+- <b>AI</b> Feature Support 
+- <b>File Upload Update In Channel</b>
+- <b> Season </b> button in search mode (users can choose their web series season)
+- <b> Language </b> Button in search mode (users can choose language of their files)
+- <b>Quality </b> Button in search mode (users can choose Quality for their files)
+- <b>Years </b> Button in search mode (users can choose Years for accurate results)
+- Independent <b>Stream Features</b> (Don't need to host any other F2Link bot for stream)
+- Group admin Can select their <b>3 shortner</b> site and <b>3 Tutorial Video</b> for each shortner
+- Indexes Files above 2GB
+- PreDVD and CamRip Delete Mode
+- <b>Multiple Mongo Database</b> [Total 3 dbs , 2 For files & 1 for details saving]
+- Multiple File Deletion
+- Settings Menu (Customise as you want from Telegram)
+- Custom Welcome Message
+- Automatic File Filtering / <b>Auto Index</b>
+- <b>PM Searching</b> On Off Mode
+- Bot PM File Send Mode
+- <b>Auto File Send</b>
+- Forward Restriction
+- File Protection
+- Manual File Filtering
+- Global File Filtering
+- IMDB
+- Admin Commands
+- User Commands
+- User Broadcast [pin broadcast]
+- Group Broadcast [pin broadcast]
+- IMDB Search
+- Inline Search
+- Random pics
+- Ids And User Info
+- Status
+- Users, Chats, Channels etc
+- User Ban, Unban
+- Channel/Group List, Leave, Disable, Enable
+- <b>No Result send in Log</b> with awesome buttons 😉
+- <b>Advanced Status</b> (Disk, Cpu, Ram, Uptime..)
+- <b>Automatic Junk Group & Users Clearing On Database</b>
